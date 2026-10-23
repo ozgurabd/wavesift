@@ -1,0 +1,7 @@
+services:
+  wavesift:
+    build: .
+    volumes:
+      - type: bind
+        source: ${OUTPUT_DIR:-./downloads}
+        target: /output
